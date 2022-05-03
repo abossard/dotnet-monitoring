@@ -2,6 +2,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // App Insights https://docs.microsoft.com/en-us/azure/azure-monitor/app/asp-net-core
 
+builder.Services.AddApplicationInsightsTelemetry();
+
 // Add services to the container.
 builder.Services.AddRazorPages();
 
